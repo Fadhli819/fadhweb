@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Naim Webs</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('background3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: Arial, sans-serif; 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px; /* Saiz font mengikut arahan */
+            font-family: Arial, sans-serif; /* Font Arial */
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center;
+            padding: 15px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        .header .left-text {
+            font-family: Arial, sans-serif; 
+            font-size: 22px;
+            color: white; 
+        }
+
+        .timer {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .education-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .education-entry {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .education-entry:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .education-entry img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 4px solid silver;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education-entry img:hover {
+            border-color: #c0c0c0;
+            box-shadow: 0 0 15px 5px rgba(192, 192, 192, 0.8);
+        }
+
+        .education-text {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .education-text h2 {
+            font-family: 'Dancing Script', cursive; 
+            font-size: 24px; 
+            margin-bottom: 10px;
+        }
+
+        .education-text p {
+            font-family: Arial, sans-serif; 
+            font-size: 18px; 
+            line-height: 1.6;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script>
+        function updateTimer() {
+            const timerElement = document.getElementById('timer');
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            timerElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</head>
+<body>
+    <nav>
+        <h3 align="right">
+            <a href="index3.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="experience.html">EXPERIENCE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="hobby.html">HOBBY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>
+        </h3>
+    </nav>
+
+    <div class="header">
+        <div class="left-text">
+            <div class="timer" id="timer">00:00:00</div>
+            My Biography
+        </div>
+    </div>
+
+    <div class="education-container">
+        <div class="education-entry">
+            <img src="ccc.jpg" alt="Naim Education">
+            <div class="education-text">
+                <h2>My Background</h2>
+                <p>My name is Muhammad Naim Bin Sazali. I am from Kuala Penyu, Sabah. I was born at Hospital Kepala Batas, Pulau Pinang on 09 May 2004. I am 20 years old now. I have 4 siblings and I am the second child. Fun facts about me, I active in sport such as football, futsal and snooker.</p>
+            </div>
+        </div>
+
+        <div class="education-entry">
+            <img src="bbb.jpg" alt="Secondary Education">
+            <div class="education-text">
+                <h2>My Friends</h2>
+                <p>I have a lot of my friends. Now, each go their own way. Some of my friends pursue university, matriculation, politecnic, and there are some who continued for form 6. Even thought we are fall far apart, our relationship will never be broken.</p>
+            </div>
+        </div>
+
+        <div class="education-entry">
+            <img src="ddd.jpg" alt="Higher Education">
+            <div class="education-text">
+                <h2>My Home</h2>
+                <p>I live in Kuala Penyu, Sabah. In Kuala Penyu, there are interesting places like Tunku Abdul Rahman Marine Park and I love the laid-back atmosphere and the natural beauty of places.</p>
+            </div>
+        </div>
+
+        <div class="education-entry">
+            <img src="uitm.jpg" alt="Bachelor's Degree">
+            <div class="education-text">
+                <h2>Study</h2>
+                <p>My secondary school at SMK Sri Muda. Now, I continue to study at UiTM Samarahan Kampus 1, Sarawak.</p>
+            </div>
+        </div>
+
+        <!-- Additional Containers -->
+        <div class="education-entry">
+            <img src="yungkai.jpg" alt="A Year Ago Album Cover">
+            <div class="education-text">
+                <h2>My Favourite Song - Blue by Yung Kai</h2>
+                <p><audio id="audioPlayer" controls>
+                    <source src="songyungkai.mp3" type="audio/mpeg"></p>
+                
+            </div>
+        </div>
+
+        <div class="education-entry">
+            <img src="lowkey.jpg" alt="New Entry 2">
+            <div class="education-text">
+                <h2>My Favourite Song - Lowkey by NIKI</h2>
+                <p><audio id="audioPlayer" controls>
+                    <source src="lowkey.mp3" type="audio/mpeg"></p>
+               
+            </div>
+        </div>
+
+            <div class="education-text">
+                <h2>My Favourite Movie 1 - Boboiboy The Movie 2</h2>
+                <video width = "960" height = "auto" controls>
+                <source src="BoboiboyMovie.mp4" type="video/mp4">
+            </div>
+        </div>
+        
+</body>
+</html>

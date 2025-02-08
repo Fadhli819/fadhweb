@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Naim Webs</title>
+    <!-- Import Dancing Script font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --background: url('background3.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--background);
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: lightblue; 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        
+        h1, .contact-entry h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        
+        .bio-title {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: white;
+            margin-left: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+
+        .contact-entry {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
+        }
+
+        .contact-entry img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            border: 4px solid silver; 
+        }
+
+        .contact-entry h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .contact-entry p {
+            font-size: 1.1rem;
+            color: #ddd;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-entry a {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-entry a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <div class="bio-title">My Biography</div>
+        
+        <h3 align="right">
+            <font face="lato" size="6"> </font>
+            <font face="cinzel" size="4">
+                <a href="index3.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="experience.html">EXPERIENCE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="hobby.html">HOBBY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </font>
+        </h3>
+    </nav>
+
+    <div class="contact-container">
+        <!-- Phone Number -->
+        <div class="contact-entry">
+            <img src="ws.png" alt="Phone Icon">
+            <h2>Phone Number</h2>
+            <p>If you want to talk to me directly, give me a call or text!</p>
+            <p><strong>+601-98764892</strong></p>
+            <a href="tel:+601-98764892">Call Me</a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-entry">
+            <img src="ig.png" alt="Instagram Icon">
+            <h2>Instagram</h2>
+            <p>Stay connected with me through Instagram for updates, pictures, and more.</p>
+            <p><strong>_.iimskyie</strong></p>
+            <a href="https://www.instagram.com/_.iimskyie" target="_blank">Follow Me</a>
+        </div>
+
+        <!-- TikTok -->
+        <div class="contact-entry">
+            <img src="tiktok.png" alt="TikTok Icon">
+            <h2>TikTok</h2>
+            <p>Check out my TikTok for fun videos and creative content!</p>
+            <p><strong>@notiimm_</strong></p>
+            <a href="https://www.tiktok.com/@notiimm_" target="_blank">Follow Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
