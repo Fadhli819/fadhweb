@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Naim Webs</title>
+    <!-- Import Dancing Script font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('background3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: lightblue; 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 0 auto;  
+            width: 80%;      
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hobby-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: rgba(0, 0, 0, 0.7);  
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px; /* Increased gap between hobby cards */
+        }
+
+        .hobby-entry {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        .hobby-entry img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px; 
+            margin-top: 10px;    
+            border: 5px solid silver; 
+        }
+
+        
+        h1, .hobby-entry h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        
+        .hobby-entry h2 {
+            font-size: 2rem;
+            color: lightblue; /* Updated color to light blue */
+            margin-bottom: 10px;
+        }
+
+        .hobby-entry p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in-out;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        .header .left-text {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3 align="right">
+            <a href="index3.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="experience.html">EXPERIENCE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="hobby.html">HOBBY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>
+        </h3>
+    </nav>
+
+    <div class="header">
+        <div class="left-text">
+            My Biography
+        </div>
+    </div>
+
+    <div class="hobby-container">
+        <!-- First Hobby: Volleyball -->
+        <div class="hobby-entry">
+            <img src="futsal.jpg" alt="Futsal Image">
+            <h2>Futsal</h2>
+            <p>
+               I actively played futsal while I was at UiTM and was able to represent the faculty in the inter-faculty futsal tournament at UiTM.  
+            </p>
+        </div>
+
+        <!-- Second Hobby: Snooker -->
+        <div class="hobby-entry">
+            <img src="snooker.jpg" alt="Snooker Image">
+            <h2>Snooker</h2>
+            <p>
+                In my free time, I play snooker with my friends.
+            </p>
+        </div>
+
+        <!-- Third Hobby: Football -->
+        <div class="hobby-entry">
+            <img src="ball.jpg" alt="Ball Image">
+            <h2>Football</h2>
+            <p>
+               I have represented my high school to Kepala Batas, Sabah Zone. Now, I'm still active playing football and join tournaments.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Naim Webs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: url('background3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .experience-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .text-section {
+            flex: 2;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .text-section h2 {
+            font-family: 'Dancing Script', cursive; 
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .text-section p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-section img,
+        .bottom-images img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            border: 3px solid silver;
+        }
+
+        .bottom-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        .header .left-text {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+
+        <script>
+        function updateTimer() {
+            const timerElement = document.getElementById('timer');
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            timerElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</head>
+<body>
+    <nav>
+        <h3 align="right">
+            <a href="index3.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="experience.html">EXPERIENCE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="hobby.html">HOBBY</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>
+        </h3>
+    </nav>
+
+    <div class="header">
+        <div class="left-text">
+            My Biography
+        </div>
+    </div>
+
+    <div class="experience-container">
+        <div class="experience-entry">
+            <div class="text-section">
+                <h2>ESAF PUBG Mobile</h2>
+                <p>
+                    My experience has represented the faculty in an esports event in the pubg mobile category. that was the first time I participated in an esports competition in UiTM. My friends and I made it to the quarter finals. The achievement is a high achievement for me despite being eliminated at the quarter-final stage. I can't forget this experience because I was able to represent my faculty.
+                </p>
+                <div class="bottom-images">
+                    <img src="pubg2.jpg" alt="ESAF PUBG">
+                    <img src="lll.jpg" alt="ESAF PUBG Group">
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-entry">
+            <div class="text-section">
+                <h2>Community Service Program</h2>
+                <p>
+                    In the 3rd semester, my friend and I participated in a community service program. We held a beach cleaning program in Serabang Bay with the villagers. This program emphasizes the priority of cleanliness on the beach and re-instills a sense of responsibility in oneself to take care of the beach and other environments. The activities held are cleaning the beach, doing leisure activities with the villagers and having dinner with the community.
+                </p>
+                <div class="bottom-images">
+                    <img src="cs1.jpg" alt="Community Service Beach Cleaning">
+                    <img src="cs2.jpg" alt="Community Service Dinner">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
